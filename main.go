@@ -34,6 +34,18 @@ func main() {
 					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.Text)).Do(); err != nil {
 						log.Print(err)
 					}
+				case *linebot.StickerMessage:
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("Don't send me stickers!")).Do(); err != nil {
+						log.Print(err)
+					}
+				case *linebot.LocationMessage:
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("What is over there??")).Do(); err != nil {
+						log.Print(err)
+					}
+				default:
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("What?")).Do(); err != nil {
+						log.Print(err)
+					}
 				}
 			}
 		}
