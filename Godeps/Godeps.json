@@ -1,0 +1,15 @@
+{
+	"ImportPath": "chappx",
+	"GoVersion": "go1.11",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/line/line-bot-sdk-go/linebot",
+			"Comment": "v6.3.0-52-gde8cb19",
+			"Rev": "de8cb19605d2e5107a68b1620117b617502f6061"
+		}
+	]
+}
