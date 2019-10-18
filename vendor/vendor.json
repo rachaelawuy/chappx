@@ -1,6 +1,11 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"path": "https://github.com/line/line-bot-sdk-go",
+			"revision": ""
+		}
+	],
 	"rootPath": "chappx"
 }
